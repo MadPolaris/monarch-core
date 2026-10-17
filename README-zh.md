@@ -291,4 +291,4 @@ Monarch.builder[PipelineStage, FabDemoState]
 
 ## 6. 发布（Maven Central）
 
-仅 `monarch-core` 发布（`net.imadz:monarch-core`），其余模块均设 `publish/skip`。发布由标签驱动：推送 `v*` 标签后，既有的 `publish.yml` workflow 执行 `sbt ci-release` 签名并上传到 Central Portal（`central.sonatype.com`）。版本号由标签经 sbt-dynver 推导（如 tag `v0.1.0` → `0.1.0`）。需配置的 GitHub secrets：`OSSRH_USERNAME` / `OSSRH_PASSWORD`（Central Portal token）、`PGP_SECRET`、`PGP_PASSPHRASE`。
+仅 `monarch-core` 发布（`net.imadz:monarch-core`），其余模块均设 `publish/skip`。发布由标签驱动：推送 `v*` 标签后，既有的 `publish.yml` workflow 执行 `sbt ci-release` 签名并上传到 Central Portal（`central.sonatype.com`）。版本号由标签经 sbt-dynver 推导（如 tag `v0.2` → `0.2`）。需配置的 GitHub secrets：`OSSRH_USERNAME` / `OSSRH_PASSWORD`（Central Portal token）、`PGP_SECRET`、`PGP_PASSPHRASE`。

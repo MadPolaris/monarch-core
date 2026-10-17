@@ -289,4 +289,4 @@ Two adapter-only concerns worth noticing: **exception translation** (stage bodie
 
 ## 6. Publishing (Maven Central)
 
-Only `monarch-core` is published (`net.imadz:monarch-core`); all other modules set `publish/skip`. Releases are tag-driven via the existing `publish.yml` workflow: push a tag `v*` and `sbt ci-release` signs and uploads to the Central Portal (`central.sonatype.com`). Version comes from the tag via sbt-dynver (e.g. tag `v0.1.0` → `0.1.0`). Required GitHub repo secrets: `OSSRH_USERNAME` / `OSSRH_PASSWORD` (Central Portal token), `PGP_SECRET`, `PGP_PASSPHRASE`.
+Only `monarch-core` is published (`net.imadz:monarch-core`); all other modules set `publish/skip`. Releases are tag-driven via the existing `publish.yml` workflow: push a tag `v*` and `sbt ci-release` signs and uploads to the Central Portal (`central.sonatype.com`). Version comes from the tag via sbt-dynver (e.g. tag `v0.2` → `0.2`). Required GitHub repo secrets: `OSSRH_USERNAME` / `OSSRH_PASSWORD` (Central Portal token), `PGP_SECRET`, `PGP_PASSPHRASE`.
